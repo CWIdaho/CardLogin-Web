@@ -1,12 +1,14 @@
 <?php
+    require_once("./DB/DBConnector.php");
+    error_reporting(E_ALL ^ E_NOTICE);
     session_start();
-    if($username = $_SESSION["username"])
-    {
-        echo "This exists";
-    }
-    if(!$username)
+    if(!isset($_SESSION["username"]))
     {
         header('location: ./login.php');
+    }
+    else
+    {
+        $username = $_SESSION["username"];
     }
 ?>
 <!DOCTYPE html>
