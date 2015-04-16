@@ -5,4 +5,4 @@
 	define("_IP", "");
 	define("_HOST", "");
 	define("_USER", "");
-	define("_PASSWD", "");
+	define("_PASSWORD", "");
