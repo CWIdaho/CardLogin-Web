@@ -36,6 +36,8 @@
         <link rel="stylesheet" type="text/css" href="./CSS/main.css"/>
     </head>
     <body>
+        <div id="header">
+        </div>
         <div id="loginForm">
             <form action="./login.php" method="post">
                 <label>ID:</label><input class="tbox" type="text" name="userID"/>
