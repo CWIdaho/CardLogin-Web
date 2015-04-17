@@ -32,17 +32,21 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="./CSS/login.css"/>
+        <link rel="stylesheet" type="text/css" href="./CSS/main.css"/>
     </head>
     <body>
-        <form action="./login.php" method="post">
-            <label>ID:</label><input type="text" name="userID"/>
-            <br/>
-            <label>Password:</label><input type="text" name="password"/>
-            <br/>
-            <input type="submit" name="submit" value="Log In"/>
-        </form>
-        <p>
-            <?php echo $error; ?>
-        </p>
+        <div id="loginForm">
+            <form action="./login.php" method="post">
+                <label>ID:</label><input class="tbox" type="text" name="userID"/>
+                <br/>
+                <label>Password:</label><input class="tbox" type="text" name="password"/>
+                <br/>
+                <input class="submitButton" type="submit" name="submit" value="Log In"/>
+                <p id="error">
+                    <?php echo $error; ?>
+                </p>
+            </form>
+        </div>
     </body>
 </html>

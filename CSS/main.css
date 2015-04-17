@@ -1,0 +1,10 @@
+/* Main stylesheet for this web app */
+body
+{
+    background: #CCCC99;
+}
+.submitButton
+{
+    border-radius: 25px;
+    width: 50px;
+}

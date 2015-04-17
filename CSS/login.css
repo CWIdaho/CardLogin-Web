@@ -1,0 +1,48 @@
+/* Styles for login form*/
+
+/* Box for login form */
+#loginForm
+{
+    width:512px;
+    height:512px;
+    background-color: #FFFFCC;
+    box-shadow: 10px 10px 5px #888888;
+    margin-left: auto;
+    margin-right: auto;
+}
+#loginForm > form
+{
+    position:relative;
+    width:50%;
+    height: 20%;
+    top:25%;
+    margin-left: auto;
+    margin-right:auto;
+}
+#loginForm > form > *
+{
+    margin-bottom:2px;
+}
+#loginForm > form > label
+{
+    float:left;
+}
+#loginForm > form > .tbox
+{
+    float:right;
+}
+#loginForm > form > .submitButton
+{
+    position: absolute;
+    border-radius: 25px;
+    width: 100px;
+    height: 25px;
+    margin-left:auto;
+    margin-right:auto;
+    bottom:0px;
+}
+#loginForm > form > #error
+{
+    top:0px;
+    color: #F00;
+}
