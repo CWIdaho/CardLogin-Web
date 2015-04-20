@@ -12,6 +12,9 @@
             <input type="submit" name="submit" value="Search"/>
         </form>
     </section>
+    <pre>
+        <?php $dbconnector->getUser(); ?>
+    </pre>
 <?php
 	require_once 'footer.php';
 ?>

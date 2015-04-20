@@ -10,10 +10,13 @@
 
         public function getUser()
         {
-            if($result = $this->_connection->query("SELECT cwiid, role FROM users INNER JOIN usersrol ON users.cwiid = userid INNER JOIN roles ON roleid = roles.id"))
+            if($result = $this->_connection->query("SELECT * FROM swipes"))
             {
-                print_r($result->num_rows);
-                echo "I promise this is working";
+                print_r($result->fetch_assoc());
+            }
+            else
+            {
+                echo $this->_connection->errno;
             }
         }
         public function write()
