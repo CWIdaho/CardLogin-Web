@@ -1,9 +1,5 @@
 <?php
 	require_once 'header.php';
-    if($_SERVER["REQUEST_METHOD"] != 'POST')
-    {
-
-    }
 ?>
 <!-- Code goes here -->
     <section id="main">
@@ -16,13 +12,16 @@
                 <th>Time Out</th>
                 <th>Cumulative Time</th>
             </tr>
+        </table>
+        <pre>
             <?php
-                $dbconnector->getSwipes($_POST())
+                if($_SERVER["REQUEST_METHOD"] == 'POST')
+                {
+                    $dbconnector->getSwipes($_POST["search"]);
+                }
             ?>
+        </pre>
     </section>
-    <pre>
-        <?php $dbconnector->getUser(); ?>
-    </pre>
 <?php
 	require_once 'footer.php';
 ?>

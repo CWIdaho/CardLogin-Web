@@ -7,14 +7,11 @@
         <h2>
             Search
         </h2>
-        <form method="post" action="./View.php">
+        <form method="post" action="./view.php">
             <input id="search" type="text" name="search"/>
             <input type="submit" name="submit" value="Search"/>
         </form>
     </section>
-    <pre>
-        <?php $dbconnector->getUser(); ?>
-    </pre>
 <?php
 	require_once 'footer.php';
 ?>
