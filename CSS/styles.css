@@ -12,7 +12,7 @@ h2 {
 	}
 
 .header{
-	 position: relative; 
+	 position: relative;
 	margin: -8px;
     height:200px;
     background:#660000;
@@ -23,10 +23,10 @@ h2 {
 	padding: 0px;
 	display: block;
   }
-  
+
 .header img {
 	padding-left: 1%;
-}  
+}
 
 #logoutbttn {
 	width: 200px;  height: 40px;
@@ -64,7 +64,7 @@ h2 {
 
 
 
-	
+
 #showbttn{
 	width: 200px;  height: 40px;
 	border:		4px double goldenrod;
@@ -95,7 +95,7 @@ h2 {
 	text-align:center;
 	margin-left: 7%;
 
-	}  
+	}
 .box{
 	background-color: #FFFFCC;
 	height: 400px;
@@ -111,10 +111,10 @@ h2 {
 #logform{
 	padding-top: 8%;
 	}
-		
+
 #logform2{
 	padding-top: 15%;
-	}	
+	}
 
 
 label {
@@ -122,7 +122,7 @@ label {
     width:80px;
     text-align: right;
 	padding: 1%;
-	
+
 }
 
 .subbttn {
@@ -137,38 +137,37 @@ label {
 	font-family: 'Righteous', cursive;
 	letter-spacing: 1px;
 	}
-	
-.inputbox{background: white; 
-    border: 1px solid darkgoldenrod; 
-    border-radius: 5px; 
-    box-shadow: 0 0 5px 3px goldenrod; 
-    color: #666; 
-    outline: none; 
-    height:25px; 
-    width: 275px; 
+
+.inputbox{background: white;
+    border: 1px solid darkgoldenrod;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 3px goldenrod;
+    color: #666;
+    outline: none;
+    height:25px;
+    width: 275px;
 	}
-.inputbox2{background: white; 
-    border: 1px solid darkgoldenrod; 
-    border-radius: 5px; 
-    box-shadow: 0 0 5px 3px goldenrod; 
-    color: #666; 
-    outline: none; 
-    height:25px; 
-    width: 200px; 
+.inputbox2{background: white;
+    border: 1px solid darkgoldenrod;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 3px goldenrod;
+    color: #666;
+    outline: none;
+    height:25px;
+    width: 200px;
 	}
-	
+
 #buttons{
 	display: inline;
 	margin-left: 22%;
-	}		
+	}
 
 #alert{
 	font-weight: bold;
 	color: red;
 	font-size:14px;
 	}
-	
+
 	#labelid {
 		font-size: 16px;
 		}
-		

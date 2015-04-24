@@ -10,7 +10,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-        <link rel="stylesheet" type="text/css" href="./CSS/main.css"/>
+        <link rel="icon" type="image/png" href="./Images/favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="./CSS/styles.css">
 	</head>
 	<body>
         <header class="header">
