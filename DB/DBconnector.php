@@ -18,11 +18,12 @@
             {
                 echo $this->_connection->errno;
             }
+            $this->_connection->free_result();
         }
 
         public function getSwipes($id)
         {
-            if($result = $this->_connection->query("SELECT * FROM swipes"))
+            if($result = $this->_connection->query("SELECT cwiid, location, swipedate, timein, timeout FROM swipes"))
             {
                 while($row = $result->fetch_array(MYSQLI_NUM))
                 {
@@ -31,9 +32,15 @@
                     {
                         echo "<td>".$row[$i]."</td>";
                     }
+                    echo "<td>".$this->getTimeDiff($row[4],$row[3])." minutes</td>";
                     echo "</tr>";
                 }
             }
+            $this->_connection->free_result();
+        }
+        private function getTimeDiff($x, $y)
+        {
+            return round((strtotime($x) - strtotime($y))/60);
         }
 	}
     $dbconnector = new DBConnector();
