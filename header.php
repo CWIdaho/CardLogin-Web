@@ -13,9 +13,6 @@
         <link rel="stylesheet" type="text/css" href="./CSS/main.css"/>
 	</head>
 	<body>
-        <div id="header">
-            <div id="headerButtons">
-                <button value="Log Out">Log Out</button>
-                <button value="Back to Search">Back to Search</button>
-            </div>
-        </div>
+        <header class="header">
+            <img src="logo.png" alt="MaSCA" style="width:200px;height:200px;">
+        </header>
