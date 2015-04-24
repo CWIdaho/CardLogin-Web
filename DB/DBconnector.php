@@ -24,8 +24,15 @@
         {
             if($result = $this->_connection->query("SELECT * FROM swipes"))
             {
-                echo $this->_connection->affected_rows;
-                print_r($result->fetch_all());
+                while($row = $result->fetch_array(MYSQLI_NUM))
+                {
+                    echo "<tr>";
+                    for($i = 0; $i < count($row); $i++)
+                    {
+                        echo "<td>".$row[$i]."</td>";
+                    }
+                    echo "</tr>";
+                }
             }
         }
 	}

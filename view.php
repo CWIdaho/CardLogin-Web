@@ -12,15 +12,13 @@
                 <th>Time Out</th>
                 <th>Cumulative Time</th>
             </tr>
-        </table>
-        <pre>
             <?php
                 if($_SERVER["REQUEST_METHOD"] == 'POST')
                 {
                     $dbconnector->getSwipes($_POST["search"]);
                 }
             ?>
-        </pre>
+        </table>
     </section>
 <?php
 	require_once 'footer.php';
