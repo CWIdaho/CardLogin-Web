@@ -35,7 +35,7 @@ h2 {
 	border-radius: 7px;
 	padding:		6px 12px !important;
 	font-size:		18px !important;
-	background-image: url(bttnbackground.gif);
+	background-image: url(../Images/bttnbackground.gif);
 	color: gold;
 	font-weight:bold;
 	font-weight: lighter;
@@ -52,7 +52,7 @@ h2 {
 	border-radius: 7px;
 	padding:		6px 12px !important;
 	font-size:		16px !important;
-	background-image: url(bttnbackground.gif);
+	background-image: url(../Images/bttnbackground.gif);
 	color:			#FFFFCC;
 	font-weight: lighter;
 	font-family: 'Righteous', cursive;
@@ -71,7 +71,7 @@ h2 {
 	border-radius: 7px;
 	padding:		6px 12px !important;
 	font-size:		16px !important;
-	background-image: url(bttnbackground.gif);
+	background-image: url(../Images/bttnbackground.gif);
 	color:			#FFFFCC;
 	font-weight: lighter;
 	font-family: 'Righteous', cursive;
@@ -87,7 +87,7 @@ h2 {
 	border-radius: 7px;
 	padding:		6px 12px !important;
 	font-size:		16px !important;
-	background-image: url(bttnbackground.gif);
+	background-image: url(../Images/bttnbackground.gif);
 	color:			#FFFFCC;
 	font-weight: lighter;
 	font-family: 'Righteous', cursive;
@@ -131,7 +131,7 @@ label {
 	border-radius: 7px;
 	padding:		8px 35px !important;
 	font-size:		16px !important;
-	background-image: url(bttnbackground.gif);
+	background-image: url(../Images/bttnbackground.gif);
 	color:			#FFFFCC;
 	font-weight: lighter;
 	font-family: 'Righteous', cursive;

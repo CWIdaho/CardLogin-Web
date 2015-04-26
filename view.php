@@ -1,4 +1,8 @@
 <?php
+    if($_SERVER["REQUEST_METHOD"] != 'POST' || empty($_POST["studentID"]))
+    {
+        header('location: ./');
+    }
 	require_once 'header.php';
 ?>
 <!-- Code goes here -->
@@ -13,10 +17,7 @@
                 <th>Cumulative Time</th>
             </tr>
             <?php
-                if($_SERVER["REQUEST_METHOD"] == 'POST')
-                {
-                    $dbconnector->getSwipes($_POST["search"]);
-                }
+                $dbconnector->getSwipes($_POST["studentID"]);
             ?>
         </table>
     </section>
