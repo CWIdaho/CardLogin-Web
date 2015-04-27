@@ -2,12 +2,15 @@
 	require_once 'dbcon.php';
 	class DBConnector
 	{
+        //Connection string
         private $_connection;
+        //Constructor. Runs at the start of every load. Sets the connection string
         function __construct()
         {
             $this->_connection = new mysqli(_IP.":3306", _USER, _PASSWORD, _DBNAME);
         }
 
+        //Returns list of users. Will be setup for authentication later.
         public function getUser()
         {
             if($result = $this->_connection->query("SELECT * FROM users"))
@@ -20,6 +23,7 @@
             }
         }
 
+        //Returns swipe table. Creates the table and then displays it.
         public function getSwipesTable($id)
         {
             echo "
@@ -47,6 +51,13 @@
             }
             echo "</table>";
         }
+
+        //Returns table for weekly reporting. Creates the table then displays it.
+        public function getWeeklyReportTable()
+        {
+
+        }
+
         private function getTimeDiff($x, $y)
         {
             return round((strtotime($x) - strtotime($y))/60);
