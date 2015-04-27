@@ -31,24 +31,28 @@
 ?>
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="./CSS/login.css"/>
-        <link rel="stylesheet" type="text/css" href="./CSS/main.css"/>
-    </head>
-    <body>
-        <div id="header">
-        </div>
-        <div id="loginForm">
-            <form action="./login.php" method="post">
-                <label>ID:</label><input class="tbox" type="text" name="userID"/>
-                <br/>
-                <label>Password:</label><input class="tbox" type="text" name="password"/>
-                <br/>
-                <input class="submitButton" type="submit" name="submit" value="Log In"/>
-                <p id="error">
-                    <?php echo $error; ?>
-                </p>
-            </form>
-        </div>
+    	<head>
+        <link rel="icon" type="image/png" href="./Images/favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="./CSS/styles.css">
+	</head>
+	<body>
+        <header class="header">
+            <img src="./Images/logo.png" alt="MaSCA" style="width:200px;height:200px;">
+        </header>
+        <section class="box">
+            <div id="logform2">
+                <form action="./login.php" method="post">
+                    <legend><h2>Login</h2></legend>
+                    <label>ID:</label><input class="tbox" type="text" name="userID"/>
+                    <br/>
+                    <label>Password:</label><input class="tbox" type="text" name="password"/>
+                    <br/>
+                    <input class="submitButton" type="submit" name="submit" value="Log In"/>
+                    <p id="error">
+                        <?php echo $error; ?>
+                    </p>
+                </form>
+            </div>
+        </section>
     </body>
 </html>
