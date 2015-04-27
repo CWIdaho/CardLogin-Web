@@ -26,18 +26,18 @@
         //Returns swipe table. Creates the table and then displays it.
         public function getSwipesTable($id)
         {
-            echo "
-            <table border='1'>
-            <tr>
-                <th>Student ID</th>
-                <th>Location ID</th>
-                <th>Date</th>
-                <th>Time In</th>
-                <th>Time Out</th>
-                <th>Cumulative Time</th>
-            </tr>";
             if($result = $this->_connection->query("SELECT cwiid, location, swipedate, timein, timeout FROM swipes WHERE cwiid LIKE '".$id."'"))
             {
+                echo"
+                    <table border='1'>
+                    <tr>
+                        <th>Student ID</th>
+                        <th>Location ID</th>
+                        <th>Date</th>
+                        <th>Time In</th>
+                        <th>Time Out</th>
+                        <th>Cumulative Time</th>
+                    </tr>";
                 while($row = $result->fetch_array(MYSQLI_NUM))
                 {
                     echo "<tr>";
@@ -48,14 +48,44 @@
                     echo "<td>".$this->getTimeDiff($row[4],$row[3])." minutes</td>";
                     echo "</tr>";
                 }
+                echo "</table>";
             }
-            echo "</table>";
+            else
+            {
+                echo $this->_connection->errno;
+            }
         }
 
         //Returns table for weekly reporting. Creates the table then displays it.
         public function getWeeklyReportTable()
         {
-
+            if($result = $this->_connection->query("
+            SELECT cwiid, SUM(minutes) FROM(
+                SELECT cwiid, swipedate, time_format(timediff(timeout, timein), '%i') AS minutes FROM `swipes`
+                WHERE  swipedate BETWEEN '2015-04-19' AND '2015-04-26'
+                GROUP BY cwiid, swipedate, timein) AS swipesByDayId GROUP BY cwiid"))
+            {
+                echo "
+                <table border='1'>
+                    <tr>
+                        <th>Student ID</th>
+                        <th>Total time</th>
+                    </tr>";
+                while($row = $result->fetch_array(MYSQLI_NUM))
+                {
+                    echo "<tr>";
+                    for($i = 0; $i < count($row); $i++)
+                    {
+                        echo "<td>".$row[$i]."</td>";
+                    }
+                    echo "</tr>";
+                }
+                echo "</table>";
+            }
+            else
+            {
+                echo $this->_connection->errno;
+            }
         }
 
         private function getTimeDiff($x, $y)
