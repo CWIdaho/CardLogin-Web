@@ -18,12 +18,21 @@
             {
                 echo $this->_connection->errno;
             }
-            $this->_connection->free_result();
         }
 
-        public function getSwipes($id)
+        public function getSwipesTable($id)
         {
-            if($result = $this->_connection->query("SELECT cwiid, location, swipedate, timein, timeout FROM swipes"))
+            echo "
+            <table border='1'>
+            <tr>
+                <th>Student ID</th>
+                <th>Location ID</th>
+                <th>Date</th>
+                <th>Time In</th>
+                <th>Time Out</th>
+                <th>Cumulative Time</th>
+            </tr>";
+            if($result = $this->_connection->query("SELECT cwiid, location, swipedate, timein, timeout FROM swipes WHERE cwiid LIKE '".$id."'"))
             {
                 while($row = $result->fetch_array(MYSQLI_NUM))
                 {
@@ -36,7 +45,7 @@
                     echo "</tr>";
                 }
             }
-            $this->_connection->free_result();
+            echo "</table>";
         }
         private function getTimeDiff($x, $y)
         {
