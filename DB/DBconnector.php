@@ -57,12 +57,14 @@
         }
 
         //Returns table for weekly reporting. Creates the table then displays it.
-        public function getWeeklyReportTable()
+        //bWeek = Beginning of the week
+        //eWeek = End of the week
+        public function getWeeklyReportTable($bWeek, $eWeek)
         {
             if($result = $this->_connection->query("
             SELECT cwiid, SUM(minutes) FROM(
                 SELECT cwiid, swipedate, time_format(timediff(timeout, timein), '%i') AS minutes FROM `swipes`
-                WHERE  swipedate BETWEEN '2015-04-19' AND '2015-04-26'
+                WHERE  swipedate BETWEEN '".$bWeek."' AND '".$eWeek."'
                 GROUP BY cwiid, swipedate, timein) AS swipesByDayId GROUP BY cwiid"))
             {
                 echo "
