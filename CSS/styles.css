@@ -1,19 +1,31 @@
 @charset "utf-8";
 /* CSS Document */
 
+<<<<<<< HEAD
 body {
 	background-color: #CCCC99 ;
+=======
+body {background-color: #CCCC99 ;
+>>>>>>> 56140d7e713c902d3c8aac5bc9fb0a465bd16f99
 	background-repeat: no-repeat;
 	font-size:20px;
 }
 
 h2 {
 	font-family: 'Righteous', cursive;
+<<<<<<< HEAD
 	color: #4a4a4a;
 }
 
 .header {
 	position: relative; 
+=======
+	color: black;
+	}
+
+.header{
+	 position: relative;
+>>>>>>> 56140d7e713c902d3c8aac5bc9fb0a465bd16f99
 	margin: -8px;
     height:200px;
     background:#660000;
@@ -24,6 +36,7 @@ h2 {
 	padding: 0px;
 	display: block;
   }
+<<<<<<< HEAD
   
 .header img {
 	padding-left: 1%;
@@ -37,11 +50,44 @@ h2 {
 	border-radius: 7px;
 	font-size:		16px !important;
 	background-image: url(bttnbackground.gif);
+=======
+
+.header img {
+	padding-left: 1%;
+}
+
+#logoutbttn {
+	width: 200px;  height: 40px;
+	display:inline;
+	border:		4px double goldenrod;
+	border-radius: 7px;
+	padding:		6px 12px !important;
+	font-size:		18px !important;
+	background-image: url(../Images/bttnbackground.gif);
+	color: gold;
+	font-weight:bold;
+	font-weight: lighter;
+	font-family: 'Righteous', cursive;
+	letter-spacing: 1px;
+	text-align:center;
+	margin-top: 140px;
+	margin-right: 20px;
+	float: right;
+}
+#backbttn{
+	width: 200px;  height: 40px;
+	border:		4px double goldenrod;
+	border-radius: 7px;
+	padding:		6px 12px !important;
+	font-size:		16px !important;
+	background-image: url(../Images/bttnbackground.gif);
+>>>>>>> 56140d7e713c902d3c8aac5bc9fb0a465bd16f99
 	color:			#FFFFCC;
 	font-weight: lighter;
 	font-family: 'Righteous', cursive;
 	letter-spacing: 1px;
 	text-align:center;
+<<<<<<< HEAD
 	padding: 5px;
 }
 
@@ -51,11 +97,28 @@ h2 {
 	border-radius: 7px;
 	font-size:		16px !important;
 	background-image: url(bttnbackground.gif);
+=======
+	margin-top: 2%;
+}
+
+
+
+
+
+#showbttn{
+	width: 200px;  height: 40px;
+	border:		4px double goldenrod;
+	border-radius: 7px;
+	padding:		6px 12px !important;
+	font-size:		16px !important;
+	background-image: url(../Images/bttnbackground.gif);
+>>>>>>> 56140d7e713c902d3c8aac5bc9fb0a465bd16f99
 	color:			#FFFFCC;
 	font-weight: lighter;
 	font-family: 'Righteous', cursive;
 	letter-spacing: 1px;
 	text-align:center;
+<<<<<<< HEAD
 	padding: 5px;
 }
 
@@ -70,53 +133,104 @@ h2 {
 	background-image: url(bttnbackground.gif);
 	color: gold;
 	font-weight:bold;
+=======
+	margin-left: 7%;
+
+	}
+
+#createbttn{
+	width: 200px;  height: 40px;
+	border:		4px double goldenrod;
+	border-radius: 7px;
+	padding:		6px 12px !important;
+	font-size:		16px !important;
+	background-image: url(../Images/bttnbackground.gif);
+	color:			#FFFFCC;
+>>>>>>> 56140d7e713c902d3c8aac5bc9fb0a465bd16f99
 	font-weight: lighter;
 	font-family: 'Righteous', cursive;
 	letter-spacing: 1px;
 	text-align:center;
+<<<<<<< HEAD
 	margin-top: 140 20 0 0;
 	float: right;
 }
 
 
 	 
+=======
+	margin-left: 7%;
+
+	}
+>>>>>>> 56140d7e713c902d3c8aac5bc9fb0a465bd16f99
 .box{
 	background-color: #FFFFCC;
 	height: 400px;
 	width: 500px;
+<<<<<<< HEAD
 	margin: 7% auto;
 	box-shadow: 5px 10px 10px 5px dimgray;
 	text-align: center;
 }
+=======
+	margin-left: auto;
+    margin-right: auto;
+	margin-top: 7%;
+	box-shadow: 5px 10px 10px 5px dimgray;
+	text-align: center;
+	}
+>>>>>>> 56140d7e713c902d3c8aac5bc9fb0a465bd16f99
 
 
 #logform{
 	padding-top: 8%;
+<<<<<<< HEAD
 }
 		
 #logform2{
 	padding-top: 15%;
 }	
+=======
+	}
+
+#logform2{
+	padding-top: 15%;
+	}
+>>>>>>> 56140d7e713c902d3c8aac5bc9fb0a465bd16f99
 
 
 label {
     display: inline-block;
     width:80px;
     text-align: right;
+<<<<<<< HEAD
 	padding: 1.5%;
 }
 
 .subbttn {
 	margin: 0 auto;
+=======
+	padding: 1%;
+
+}
+
+.subbttn {
+
+>>>>>>> 56140d7e713c902d3c8aac5bc9fb0a465bd16f99
 	border:		4px double darkgoldenrod;
 	border-radius: 7px;
 	padding:		8px 35px !important;
 	font-size:		16px !important;
+<<<<<<< HEAD
 	background-image: url(bttnbackground.gif);
+=======
+	background-image: url(../Images/bttnbackground.gif);
+>>>>>>> 56140d7e713c902d3c8aac5bc9fb0a465bd16f99
 	color:			#FFFFCC;
 	font-weight: lighter;
 	font-family: 'Righteous', cursive;
 	letter-spacing: 1px;
+<<<<<<< HEAD
 }
 	
 .inputbox{
@@ -232,3 +346,51 @@ td{
 	background-color:#B8B88A;
 	font-family: 'Righteous', cursive;
 }
+=======
+	}
+
+.inputbox{background: white;
+    border: 1px solid darkgoldenrod;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 3px goldenrod;
+    color: #666;
+    outline: none;
+    height:25px;
+    width: 275px;
+	}
+.inputbox2{background: white;
+    border: 1px solid darkgoldenrod;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 3px goldenrod;
+    color: #666;
+    outline: none;
+    height:25px;
+    width: 200px;
+	}
+
+#buttons{
+	display: inline;
+	margin-left: 22%;
+	}
+
+#alert{
+	font-weight: bold;
+	color: red;
+	font-size:14px;
+	}
+
+	#labelid {
+		font-size: 16px;
+		}
+/**/
+.good
+{
+    background-color: #0a0;
+    color:#fff;
+}
+.bad
+{
+    background-color: #a00;
+    color:#fff;
+}
+>>>>>>> 56140d7e713c902d3c8aac5bc9fb0a465bd16f99
