@@ -171,3 +171,14 @@ label {
 	#labelid {
 		font-size: 16px;
 		}
+/**/
+.good
+{
+    background-color: #0a0;
+    color:#fff;
+}
+.bad
+{
+    background-color: #a00;
+    color:#fff;
+}

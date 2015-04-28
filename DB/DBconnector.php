@@ -75,12 +75,7 @@
                     </tr>";
                 while($row = $result->fetch_array(MYSQLI_NUM))
                 {
-                    echo "<tr>";
-                    for($i = 0; $i < count($row); $i++)
-                    {
-                        echo "<td>".$row[$i]."</td>";
-                    }
-                    echo "</tr>";
+                    echo "<tr> <td>".$row[0]." </td> <td class='".$this->getColor($row[1])."'> ".$row[1]." Minutes </td> </tr>";
                 }
                 echo "</table>";
             }
@@ -89,7 +84,17 @@
                 echo $this->_connection->errno;
             }
         }
-
+        private function getColor($time)
+        {
+            if($time >= 150)
+            {
+                return "good";
+            }
+            else
+            {
+                return "bad";
+            }
+        }
         private function getTimeDiff($x, $y)
         {
             return round((strtotime($x) - strtotime($y))/60);
