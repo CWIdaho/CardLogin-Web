@@ -43,6 +43,7 @@
                 <input class="inputbox" id="studentID" type="text" name="studentID"/>
                 <input class="subbttn" type="submit" name="submit" value="Search"/>
             </form>
+            <a href="./weekReport.php" class="subbttn">Weekly Report</a>
         </div>
     </section>
 <?php
