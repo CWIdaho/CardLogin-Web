@@ -12,6 +12,7 @@
 	<head>
         <link rel="icon" type="image/png" href="./Images/favicon.ico" />
         <link rel="stylesheet" type="text/css" href="./CSS/styles.css">
+        <link rel="stylesheet" type="text/css" href="./CSS/table.css"/>
         <script>
         function setFocus()
         {

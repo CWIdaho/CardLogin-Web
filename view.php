@@ -10,6 +10,15 @@
             <?php
                 $dbconnector->getSwipesTable($_POST["studentID"]);
             ?>
+        <button onclick="goBack()">Go Back</button>
+
+<script>
+    
+function goBack() {
+    window.history.back();
+}
+</script>
+
     </section>
 <?php
 	require_once 'footer.php';

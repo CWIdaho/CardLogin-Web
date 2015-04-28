@@ -22,6 +22,15 @@
                 $dbconnector->getWeeklyReportTable($_POST["bWeek"], $_POST["eWeek"]);
             }
         ?>
+        <button onclick="goBack()">Go Back</button>
+
+<script>
+  
+function goBack() {
+    window.history.back();
+}
+</script>
+
     </section>
 <?php
 	require_once 'footer.php';

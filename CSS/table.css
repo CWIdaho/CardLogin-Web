@@ -1,0 +1,48 @@
+table
+{ 	text-align: center;
+  	margin: 0 auto;
+}
+	
+.tableh2 
+{
+	text-align:center;
+}
+	
+th 
+{
+	font-family: 'Righteous', cursive;
+	color: #660000;
+	border-style: solid;
+	border-color: #EEB111;
+	border-collapse:collapse;
+	border-width: 4px;
+	border-radius: 5px;
+	background-color:#B8B88A;
+	padding: 2px 5px;
+}
+
+td{
+	border-style:solid;
+	border-color: #EEB111;
+	border-collapse:collapse;
+	border-width: 2px;
+}
+	
+.inout{
+	background-color:#FFFFCC;
+}
+	
+.gold
+{
+	background-color: #EEB111;
+	border:	3px solid goldenrod;
+}
+
+.edit
+{
+	background-color: #660000;
+	border:	2px solid darkgoldenrod;
+	border-radius: 5px;
+	color: #EEB111;
+	font-family: 'Righteous', cursive;
+}	
